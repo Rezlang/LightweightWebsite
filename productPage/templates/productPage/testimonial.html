@@ -1,0 +1,155 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonial</title>
+  {% load static %}
+  <style>
+    #testimonial {
+    margin-top: 50px;
+  }
+  #testimonial .stylish_heading {
+    text-align: center;
+  }
+  #testimonial .row {
+    margin-top: 6.25rem;
+  }
+  
+  .bubble {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 20px 30px;
+    position: relative;
+  }
+  
+  .bubble::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 5%;
+    transform: translate(50%, -50%) rotate(45deg) translateZ(0);
+    height: 15px;
+    width: 15px;
+    background: linear-gradient(-45deg, #fff 52%, transparent 0);
+    border: inherit;
+    border-width: 0 1px 1px 0;
+    border-radius: 0 0 2px 0;
+  }
+  
+  .bubble:hover {
+    border: 1px solid transparent;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.3s;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-name {
+    background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  .client-info {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .name h4 {
+    line-height: 1.5 !important;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  .role {
+    font-size: 16px;
+    line-height: 1;
+  }
+  </style>
+  <script>
+
+  </script>
+</head>
+<body>
+    <!-- Testimonial Section -->
+    <section id="testimonial">
+        <h2 class="stylish_heading">
+          What people say <span class="red_dot">.</span>
+        </h2>
+        <div class="row">
+          <div class="col span_1_of_3">
+            <div class="bubble">
+              <p class="message">
+                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim"
+              </p>
+              <span class="company-name">Booking.com</span>
+            </div>
+            <div class="client-info">
+              <img class="avatar" src="images/avatar1.jpg" alt="" />
+              <div class="name">
+                <h4>John Doe</h4>
+                <p class="role">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col span_1_of_3">
+            <div class="bubble">
+              <p class="message">
+                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim"
+              </p>
+              <span class="company-name">Airnbnb</span>
+            </div>
+            <div class="client-info">
+              <img class="avatar" src="images/avatar2.jpg" alt="" />
+              <div class="name">
+                <h4>John Doe</h4>
+                <p class="role">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col span_1_of_3">
+            <div class="bubble">
+              <p class="message">
+                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim"
+              </p>
+              <span class="company-name">Symu.co</span>
+            </div>
+            <div class="client-info">
+              <img class="avatar" src="images/avatar3.jpg" alt="" />
+              <div class="name">
+                <h4>John Doe</h4>
+                <p class="role">CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Testimonial Section -->
+  
+  
+</body>
+
+</html>
