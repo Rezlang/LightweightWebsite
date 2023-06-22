@@ -7,6 +7,8 @@
   <style>
     #testimonial {
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
   }
   #testimonial .stylish_heading {
     text-align: center;
@@ -38,7 +40,7 @@
   }
   
   .bubble:hover {
-    border: 1px solid transparent;
+    border: 1px solid #dfdfdf;
     cursor: pointer;
     transform: translateY(-20px);
     transition: 0.3s;
@@ -101,10 +103,10 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim"
               </p>
-              <span class="company-name">Booking.com</span>
+              <span class="company-name">Customer</span>
             </div>
             <div class="client-info">
-              <img class="avatar" src="images/avatar1.jpg" alt="" />
+              <img class="avatar" src="{% static '/images/avatar1.png' %}" alt="" />
               <div class="name">
                 <h4>John Doe</h4>
                 <p class="role">CEO</p>
@@ -118,27 +120,10 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim"
               </p>
-              <span class="company-name">Airnbnb</span>
+              <span class="company-name">Customer</span>
             </div>
             <div class="client-info">
-              <img class="avatar" src="images/avatar2.jpg" alt="" />
-              <div class="name">
-                <h4>John Doe</h4>
-                <p class="role">CEO</p>
-              </div>
-            </div>
-          </div>
-          <div class="col span_1_of_3">
-            <div class="bubble">
-              <p class="message">
-                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim"
-              </p>
-              <span class="company-name">Symu.co</span>
-            </div>
-            <div class="client-info">
-              <img class="avatar" src="images/avatar3.jpg" alt="" />
+              <img class="avatar" src="{% static '/images/avatar2.png' %}" alt="" />
               <div class="name">
                 <h4>John Doe</h4>
                 <p class="role">CEO</p>
