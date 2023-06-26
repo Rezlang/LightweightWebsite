@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Page</title>
+  {% load static %}
+  <style>
+    /* Centered Slogan Text */
+    .slogan {
+      text-align: center;
+    }
+
+    /* Centered iPhone Screen Image */
+    .iphone-image {
+      display: block;
+      margin: 0 auto;
+      width: 300px; /* Adjust the width as needed */
+    }
+
+    /* Download Buttons Container */
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Individual Download Button */
+    .download-button {
+      margin: 0 10px;
+    }
+
+    /* Adjust button styles as needed */
+    .download-button img {
+      display: block;
+      width: 200px; /* Adjust the width as needed */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="slogan">Welcome to our App!</h1>
+
+  <img class="iphone-image" src="{% static '/images/LightweightPhone.png' %}" alt="iPhone Screen Image">
+
+  <div class="download-buttons">
+    <div class="download-button">
+      <a href="download-link-1">
+        <img src="{% static '/images/googleDownload.png' %}" alt="Download Button 1">
+      </a>
+    </div>
+    <div class="download-button">
+      <a href="download-link-2">
+        <img src="{% static '/images/appleDownload.png' %}" alt="Download Button 2">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

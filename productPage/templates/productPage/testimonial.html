@@ -12,17 +12,27 @@
   }
   #testimonial .stylish_heading {
     text-align: center;
+    margin: 0 auto;
+    width: 100%;
   }
   #testimonial .row {
     margin-top: 6.25rem;
   }
   
   .bubble {
-    background-color: #fff;
-    border: 1px solid #dfdfdf;
-    padding: 20px 30px;
-    position: relative;
-  }
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  padding: 20px 30px;
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* for horizontal centering of text */
+}
+
+/*... Rest of your CSS ...*/
+
   
   .bubble::after {
     display: block;
@@ -57,7 +67,7 @@
   
   .message {
     margin-bottom: 20px;
-    font-style: italic;
+    font-style: normal;
     line-height: 1.5;
     font-size: 18px;
   }
@@ -93,40 +103,44 @@
     <!-- Testimonial Section -->
     <section id="testimonial">
         <h2 class="stylish_heading">
-          What people say <span class="red_dot">.</span>
+          Customer Testimonials <span class="red_dot">.</span>
         </h2>
         <div class="row">
           <div class="col span_1_of_3">
             <div class="bubble">
               <p class="message">
-                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim"
+                "LightWeight app provides personalized workout sessions for beginners 
+                like me. With clear exercise instructions and customizable weights and 
+                reps, I feel confident and motivated to start my fitness journey. The app 
+                adapts based on my progress, ensuring each session is challenging yet 
+                achievable."
               </p>
               <span class="company-name">Customer</span>
             </div>
             <div class="client-info">
               <img class="avatar" src="{% static '/images/avatar1.png' %}" alt="" />
               <div class="name">
-                <h4>John Doe</h4>
-                <p class="role">CEO</p>
+                <h4>Robert Smith</h4>
+                <p class="role">Computer Scientist</p>
               </div>
             </div>
           </div>
           <div class="col span_1_of_3">
             <div class="bubble">
               <p class="message">
-                "Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim"
+                "LightWeight app has revolutionized my bodybuilding journey. With easy 
+                exercise management, customizable templates, and detailed progress 
+                tracking, it keeps me focused and motivated. The app's intuitive interface
+                 and visual charts provide a clear overview of my progress, empowering me 
+                 to push harder and achieve my professional bodybuilding goals."
               </p>
               <span class="company-name">Customer</span>
             </div>
             <div class="client-info">
               <img class="avatar" src="{% static '/images/avatar2.png' %}" alt="" />
               <div class="name">
-                <h4>John Doe</h4>
-                <p class="role">CEO</p>
+                <h4>Tom Johnson</h4>
+                <p class="role">Recent Graduate</p>
               </div>
             </div>
           </div>
