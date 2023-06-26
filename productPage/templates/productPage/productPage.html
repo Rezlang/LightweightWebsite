@@ -14,7 +14,6 @@
       position: relative;
       width: 100%;
       height: 800px;
-      background-image: url("{% static '/images/gymStockImage.jpeg' %}");
       background-size: cover;
       background-position: center;
     }
@@ -38,6 +37,19 @@
       text-align: center;
       padding: 20px;
     }
+
+    .parallax {
+      /* The image used */
+      background-image: url("{% static '/images/gymStockImage.jpeg' %}");
+      position: relative;
+      width: 100%;
+      height: 800px;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   </style>
   <script>
     // JavaScript code goes here
@@ -46,7 +58,7 @@
   <body>
       {% include 'productPage/navbar.html' %}
 
-      <div class="hero-image">
+      <div class="hero-image parallax">
         <div class="dark-overlay">
           <h1 class="slogan">What will you lift next?</h1>
         </div>

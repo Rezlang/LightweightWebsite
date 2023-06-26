@@ -5,16 +5,21 @@
   <title>Testimonial</title>
   {% load static %}
   <style>
-    #testimonial {
-    margin-top: 50px;
+  #testimonial {
     display: flex;
     flex-direction: row;
+    justify-content: center; /* aligns items vertically in the center */
+    align-items: center; /* aligns items horizontally in the center */
+    height: 100vh; /* adjust this to your needs */
+    margin: 50px;
+    margin-top: 50px;
   }
   #testimonial .stylish_heading {
     text-align: center;
     margin: 0 auto;
     width: 100%;
   }
+  
   #testimonial .row {
     margin-top: 6.25rem;
   }
@@ -94,6 +99,14 @@
     font-size: 16px;
     line-height: 1;
   }
+
+  .company-message{
+    font-size: 36px;
+    color: grey;
+    margin: 50px;
+    font-style: italic;
+  }
+
   </style>
   <script>
 
@@ -102,9 +115,11 @@
 <body>
     <!-- Testimonial Section -->
     <section id="testimonial">
-        <h2 class="stylish_heading">
-          Customer Testimonials <span class="red_dot">.</span>
-        </h2>
+        <p class="company-message">
+          "Unleash your potential with Lightweight - the ultimate app for high-motivation 
+          weightlifters. Elevate your training, track progress, and exceed your goals." - 
+          Our CEO
+        </p>
         <div class="row">
           <div class="col span_1_of_3">
             <div class="bubble">
